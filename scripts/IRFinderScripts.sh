@@ -1,0 +1,90 @@
+#IRFPATH
+#IRFRESPATH
+#RAWDATAPATH
+# Build reference
+
+cd $IRFPATH/
+
+$IRFPATH/bin/IRFinder -m BuildRef -r $IRFPATH/REF/Human-hg19-release75 \
+-e $IRFPATH/REF/extra-input-files/RNA.SpikeIn.ERCC.fasta.gz \
+-b $IRFPATH/REF/extra-input-files/Human_hg19_wgEncodeDacMapabilityConsensusExcludable.bed.gz \
+-R $IRFPATH/REF/extra-input-files/Human_hg19_nonPolyA_ROI.bed \
+ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz
+
+cd $IRFRESPATH/
+
+mkdir $IRFRESPATH/SRR1691633/
+mkdir $IRFRESPATH/SRR1691634/
+mkdir $IRFRESPATH/SRR1691635/
+mkdir $IRFRESPATH/SRR1691636/
+mkdir $IRFRESPATH/SRR1691637/
+mkdir $IRFRESPATH/SRR1691638/
+mkdir $IRFRESPATH/SRR1691639/
+mkdir $IRFRESPATH/SRR1691640/
+mkdir $IRFRESPATH/SRR1691641/
+mkdir $IRFRESPATH/SRR1691642/
+mkdir $IRFRESPATH/SRR1691643/
+mkdir $IRFRESPATH/SRR1691644/
+mkdir $IRFRESPATH/SRR1691645/
+mkdir $IRFRESPATH/SRR1691646/
+mkdir $IRFRESPATH/SRR1691647/
+mkdir $IRFRESPATH/SRR1691648/
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691647/ $RAWDATAPATH/SRR1691647_1.fastq $RAWDATAPATH/SRR1691647_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691646/ $RAWDATAPATH/SRR1691646_1.fastq $RAWDATAPATH/SRR1691646_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691645/ $RAWDATAPATH/SRR1691645_1.fastq $RAWDATAPATH/SRR1691645_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691644/ $RAWDATAPATH/SRR1691644_1.fastq $RAWDATAPATH/SRR1691644_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691643/ $RAWDATAPATH/SRR1691643_1.fastq $RAWDATAPATH/SRR1691643_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691642/ $RAWDATAPATH/SRR1691642_1.fastq $RAWDATAPATH/SRR1691642_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691641/ $RAWDATAPATH/SRR1691641_1.fastq $RAWDATAPATH/SRR1691641_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691640/ $RAWDATAPATH/SRR1691640_1.fastq $RAWDATAPATH/SRR1691640_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691639/ $RAWDATAPATH/SRR1691639_1.fastq $RAWDATAPATH/SRR1691639_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691638/ $RAWDATAPATH/SRR1691638_1.fastq $RAWDATAPATH/SRR1691638_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691637/ $RAWDATAPATH/SRR1691637_1.fastq $RAWDATAPATH/SRR1691637_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691636/ $RAWDATAPATH/SRR1691636_1.fastq $RAWDATAPATH/SRR1691636_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 7000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691635/ $RAWDATAPATH/SRR1691635_1.fastq $RAWDATAPATH/SRR1691635_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 6000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691634/ $RAWDATAPATH/SRR1691634_1.fastq $RAWDATAPATH/SRR1691634_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 6000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691633/ $RAWDATAPATH/SRR1691633_1.fastq $RAWDATAPATH/SRR1691633_2.fastq
+
+$IRFPATH/bin/IRFinder -r $IRFPATH/REF/Human-hg19-release75 -M 6000 -s LoadAndRemove -t 2 -a none -d $IRFRESPATH/SRR1691648/ $RAWDATAPATH/SRR1691648_1.fastq $RAWDATAPATH/SRR1691648_2.fastq
+
+
+mkdir $IRFRESPATH/ctrlPooled/
+mkdir $IRFRESPATH/zrsr2kdPooled/
+
+
+cd /data1/ali/software/sequencing/IRFinder/IRFinder
+$IRFPATH/bin/IRFinder -m BAM -d $IRFRESPATH/zrsr2kdPooled/ -r $IRFPATH/REF/Human-hg19-release75 <(samtools cat $IRFRESPATH/SRR1691633/Unsorted.bam $IRFRESPATH/SRR1691634/Unsorted.bam $IRFRESPATH/SRR1691635/Unsorted.bam $IRFRESPATH/SRR1691636/Unsorted.bam $IRFRESPATH/SRR1691637/Unsorted.bam $IRFRESPATH/SRR1691638/Unsorted.bam $IRFRESPATH/SRR1691639/Unsorted.bam $IRFRESPATH/SRR1691640/Unsorted.bam)
+bin/IRFinder -m BAM -d $IRFRESPATH/ctrlPooled/ -r $IRFPATH/REF/Human-hg19-release75 <(samtools cat $IRFRESPATH/SRR1691641/Unsorted.bam $IRFRESPATH/SRR1691642/Unsorted.bam $IRFRESPATH/SRR1691643/Unsorted.bam $IRFRESPATH/SRR1691644/Unsorted.bam $IRFRESPATH/SRR1691645/Unsorted.bam $IRFRESPATH/SRR1691646/Unsorted.bam $IRFRESPATH/SRR1691647/Unsorted.bam $IRFRESPATH/SRR1691648/Unsorted.bam)
+
+mkdir $IRFRESPATH/finalRes/
+$IRFPATH/bin/analysisWithLowReplicates.pl \
+  -A $IRFRESPATH/ctrlPooled/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691641/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691642/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691643/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691644/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691645/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691646/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691647/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691648/IRFinder-IR-nondir.txt \ 
+  -B $IRFRESPATH/zrsr2kdPooled/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691633/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691634/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691635/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691636/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691637/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691638/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691639/IRFinder-IR-nondir.txt $IRFRESPATH/SRR1691640/IRFinder-IR-nondir.txt \
+> $IRFRESPATH/finalRes/zrsr2KD-v-Control.tab
+
+
+
+
+
+
+
+
+
+
+
+
